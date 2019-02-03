@@ -1,0 +1,13 @@
+examm_rc_homepage:
+    path:     /
+    defaults: { _controller: ExammRCBundle:Default:index }
+
+
+ajouterCapteur:
+    path:     /ajouterCapteur
+    defaults: { _controller: ExammRCBundle:Capteur:ajouterCapteur }
+
+
+afficherCapteurs:
+    path:     /afficherCapteurs
+    defaults: { _controller: ExammRCBundle:Capteur:afficherCapteurs }

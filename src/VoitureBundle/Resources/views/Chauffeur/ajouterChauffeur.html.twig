@@ -1,0 +1,27 @@
+<h3>Ajouter Chauffeurr</h3>
+
+{{ form(Form) }}
+
+
+<script src="{{ asset('js/jquery.js') }}"></script>
+
+<script>
+
+
+
+    $("#voiturebundle_chauffeur_cin").keyup(function(){
+        cin=$("#voiturebundle_chauffeur_cin").val()
+        console.log(cin);
+
+        if(cin.length == 8){
+            $("#voiturebundle_chauffeur_cin").css({'background':'green'});
+
+
+        }
+        else{
+            $("#voiturebundle_chauffeur_cin").css({'background':'red'});
+        }
+    })
+
+
+</script>

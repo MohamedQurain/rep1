@@ -1,0 +1,23 @@
+<h3>List Voitures</h3>
+
+<table border="2">
+    <th>Immatricule</th>
+    <th>Marque</th>
+    <th>Date debut</th>
+    <th>Date fin</th>
+    <th>Louer</th>
+
+
+    {% for voiture in voitures %}
+        <tr>
+            <td>{{ voiture.immatricule }}</td>
+            <td>{{ voiture.marque }}</td>
+            <td>{{ voiture.dateDebut | date()}}</td>
+            <td>{{ voiture.dateFin | date()}}</td>
+            <td><a href="{{ path('louerVoiture',{'immatricule':voiture.immatricule}) }}">Louer</a></td>
+
+
+        </tr>
+    {% endfor %}
+
+</table>

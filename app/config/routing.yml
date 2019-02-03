@@ -1,0 +1,11 @@
+examm_rc:
+    resource: "@ExammRCBundle/Resources/config/routing.yml"
+    prefix:   /
+
+voiture:
+    resource: "@VoitureBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

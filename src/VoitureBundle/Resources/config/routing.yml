@@ -1,0 +1,20 @@
+voiture_homepage:
+    path:     /
+    defaults: { _controller: VoitureBundle:Default:index }
+
+ajouterChauffeur:
+    path:     /ajouterChauffeur
+    defaults: { _controller: VoitureBundle:Chauffeur:ajouterChauffeur }
+
+
+afficherVoitures:
+    path:     /afficherVoitures
+    defaults: { _controller: VoitureBundle:Voiture:afficherVoitures }
+
+
+
+louerVoiture:
+    path:     /louerVoiture
+    defaults: { _controller: VoitureBundle:Voiture:louerVoiture }
+
+

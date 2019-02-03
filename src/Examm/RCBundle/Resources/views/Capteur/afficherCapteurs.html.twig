@@ -1,0 +1,41 @@
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+</style>
+
+<h2>Afficher capteurs</h2>
+
+
+
+{% for reseau in reseaux %}
+   <h3>{{ reseau.type }}({{ reseau.nbLimit }})</h3>
+    <table>
+    <tr>
+        <th>Id</th>
+        <th>Latitude (x)</th>
+        <th>Longitude (y)</th>
+
+
+    </tr>
+    {% for capteur in capteurs %}
+        {% if capteur.RCSF.ref == reseau.ref %}
+
+                <tr>
+                    <td>{{ capteur.Id }}</td>
+                    <td>{{ capteur.XCoordonne}}</td>
+                    <td>{{ capteur.YCoordonne }}</td>
+
+
+                </tr>
+
+        {% endif %}
+
+    {% endfor %}
+    </table>
+{% endfor %}
